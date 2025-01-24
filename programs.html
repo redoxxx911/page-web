@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit&Healthy - Programs</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(to right, #4CAF50, #45a049);
+            color: white;
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .program-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .program-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .program-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .program-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .program-content {
+            padding: 20px;
+        }
+
+        .program-title {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .program-description {
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .program-details {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            font-size: 0.9em;
+            color: #888;
+        }
+
+        .start-button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .start-button:hover {
+            background-color: #45a049;
+        }
+
+        .difficulty {
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+
+        .beginner {
+            background-color: #e7f5e7;
+            color: #4CAF50;
+        }
+
+        .intermediate {
+            background-color: #fff3e0;
+            color: #ff9800;
+        }
+
+        .advanced {
+            background-color: #ffebee;
+            color: #f44336;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Fit&Healthy Programs</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="program-grid">
+            <!-- Weight Loss Program -->
+            <div class="program-card">
+                <img src="/api/placeholder/400/200" alt="Weight Loss Program" class="program-image">
+                <div class="program-content">
+                    <h2 class="program-title">Weight Loss Program</h2>
+                    <div class="program-details">
+                        <span><i>Duration: 8 weeks</i></span>
+                        <span class="difficulty beginner">Beginner</span>
+                    </div>
+                    <p class="program-description">A comprehensive program designed to help you lose weight through balanced nutrition and effective workouts.</p>
+                    <a href="#" class="start-button">Start Program</a>
+                </div>
+            </div>
+
+            <!-- Muscle Building Program -->
+            <div class="program-card">
+                <img src="/api/placeholder/400/200" alt="Muscle Building Program" class="program-image">
+                <div class="program-content">
+                    <h2 class="program-title">Muscle Building</h2>
+                    <div class="program-details">
+                        <span><i>Duration: 12 weeks</i></span>
+                        <span class="difficulty intermediate">Intermediate</span>
+                    </div>
+                    <p class="program-description">Build lean muscle mass with our structured strength training program and nutrition guidance.</p>
+                    <a href="#" class="start-button">Start Program</a>
+                </div>
+            </div>
+
+            <!-- HIIT Program -->
+            <div class="program-card">
+                <img src="/api/placeholder/400/200" alt="HIIT Program" class="program-image">
+                <div class="program-content">
+                    <h2 class="program-title">HIIT & Cardio</h2>
+                    <div class="program-details">
+                        <span><i>Duration: 6 weeks</i></span>
+                        <span class="difficulty advanced">Advanced</span>
+                    </div>
+                    <p class="program-description">High-intensity interval training designed to boost endurance and burn maximum calories.</p>
+                    <a href="#" class="start-button">Start Program</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
